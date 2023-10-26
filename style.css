@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px ;
+  padding-right: 24px;
+  background-color: rgb(840, 248, 248);
+}
+p {
+  font-size: Roboto , arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.thumbnail {
+ width: 100%;
+
+  
+}
+
+.vedio-author ,.vedio_stats{
+  font-size: 12px;
+  color: rgb(96,96,96);
+}
+.vedio-author{
+  margin-bottom: 4px;
+}
+
+.vedio_title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+
+.vedio-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+/* .channel-pic {
+background-color: gray;
+}
+.vedio-info {
+ background-color: gray;
+} */
+.profile-pic {
+  width: 40px;
+  border-radius: 50px;
+
+}
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+.vedio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid ;
+  border-bottom-color: rgb(248, 248, 248);
+  z-index: 100;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.right {
+  
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+ 
+}
+.middle {
+  flex:1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.hmg {
+height: 24px;
+margin-left: 24px ;
+margin-right: 20px;
+}
+.ytlogo {
+height: 20px;
+}
+.search-btn {
+  height: 40px;
+  width: 65px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(197, 192, 192);
+  margin-left: -1px;
+  margin-right: 8px;
+  position: relative;
+ 
+
+}
+.search-btn , .voice-search-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn .tooltip , .voice-search-btn .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip  , 
+.voice-search-btn:hover .tooltip {
+  opacity: 1;
+}
+
+
+.voice-search-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+
+
+}
+.voice-search-icon {
+  height: 24px;
+  /* margin-top: 4px; */
+
+
+}
+.search-bar::placeholder {
+  font-family: Roboto,arial;
+  font-size: 16px;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+  width: 0;
+  border-color: rgb(197, 192, 192);
+}
+
+input:focus {
+  border: 1px solid #f3efefd3;
+  
+}
+.search-icon {
+  height: 25px;
+  /* margin-top: 4px; */
+}
+
+.upload {
+height: 24px;
+}
+.youtube-apps {
+  height: 24px;
+}
+.notifications {
+  height: 24px;
+}
+.channel-pic {
+  height: 32px;
+  border-radius: 16px;
+}
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 55px;
+  bottom: 0;
+  width: 72px;
+  background-color:white;
+  z-index: 200;
+  padding-top: 5px;
+
+}
+.sidebar-link {
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-link:hover {
+background-color:  gray;
+cursor: pointer;
+}
+.sidebar-link img {
+ height:  24px;
+ margin-top: 4px;
+
+}
+.sidebar-link div {
+  font-family: Roboto,arial;
+  font-size: 10px;
+}
+.vedio-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 9px;
+  right: 5px;
+  font-family: Robboto,arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+.notification-container {
+  position: relative;
+
+}
+.notification-count {
+  background-color: rgb(200, 0, 0);
+ border-radius: 10px;
+  top: -2px;
+  right: -5px ;
+  padding: 2px 5px 2px 5px;
+  font-family: Roboto,arial;
+  font-size: 11px;
+  font-weight: 500;
+  position: absolute;
+color: white;
+
+}
